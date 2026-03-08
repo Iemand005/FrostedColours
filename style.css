@@ -27,7 +27,7 @@ html, body {
   width: 100%;
   height: calc(100% / 6);
   margin: 0px;
-  display: none;
+  display: flex;
   /* animation: change-height 5s infinite alternate; */
 }
 
