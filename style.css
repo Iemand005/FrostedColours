@@ -4,13 +4,13 @@ html, body {
   margin: 0px;
   padding: 0px;
   /* background: black; */
-  background: radial-gradient(farthest-corner at 0px 0px,
+  /* background: radial-gradient(farthest-corner at 0px 0px,
   var(--red), 
   var(--orange),
   var(--yellow),
   var(--green),
   var(--blue),
-  var(--purple));
+  var(--purple)); */
   animation: change-gradient 1s infinite alternate;
 }
 
@@ -42,19 +42,19 @@ html, body {
 
 @keyframes change-blur {
   0% {
-    backdrop-filter: blur(1000px);
+    backdrop-filter: blur(0px);
   }
   100% {
-    backdrop-filter: blur(500px);
+    backdrop-filter: blur(0px);
   }
 }
 
 @keyframes change-gradient {
   0% {
-   background: radial-gradient(farthest-corner at 0% 0%, var(--red) 0%, var(--orange) 0%, rgb(237, 187, 21), rgb(70, 193, 147), rgb(19, 106, 187), rgb(78, 26, 102));
+   transform: rotateX(0deg) translate(1, 10, 10);
   }
   100% {
-    background: radial-gradient(farthest-corner at 0% 0%, var(--red) 0%, var(--orange) 10%, rgb(237, 187, 21), rgb(70, 193, 147), rgb(19, 106, 187), rgb(78, 26, 102));
+    transform: rotateX(0deg) translate(1, 10, 10);
   }
 }
 
